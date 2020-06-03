@@ -1,0 +1,18 @@
+<p>calculator!</p>
+<div>
+  <input [value]="firstNumber" type="number" (change)="onFirstChange($event.target.value)" class="form-input">
+  <select [value]="operator" (change)="onOperator($event.target.value)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" [(ngModel)]="secondNumber" [value]="secondNumber" (change)="onSecondChange($event.target.value)" class="form-input">
+</div>
+<div>
+    <button (click)="calculator()"> thuc thi</button>
+</div>
+<div>
+  {{output}}
+</div>
+

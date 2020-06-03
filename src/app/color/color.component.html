@@ -1,0 +1,8 @@
+<p>color works!</p>
+<div>
+  <label>Chọn màu:</label>
+  <input [value]="background" type="color" (change)="onChange($event.target.value)">
+</div>
+
+<p>Output:</p>
+<div class="col-form-label" [style.background]="background"></div>
